@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Chat</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header-page clearfix">
+		<div class="wrap">
+			<div class="header_menu">
+				<ul class="header_menu_list menu flex">
+					<li class="header_menu_list_item"><a class="header_menu_list_item_link admin" href="#">Administration</a></li>
+					<li class="header_menu_list_item">
+						<a class="header_menu_list_item_link user dropdown" href="#">User</a>
+						<ul class="dropdown_list">
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Import global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events json</a></li>
+						</ul>
+					</li>
+					<li class="header_menu_list_item">
+						<a class="header_menu_list_item_link dropdown" href="#">Locations</a>
+						<ul class="dropdown_list">
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Import global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events json</a></li>
+						</ul>
+					</li>
+					<li class="header_menu_list_item">
+						<a class="header_menu_list_item_link dropdown" href="#">Natification</a>
+						<ul class="dropdown_list">
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Import global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events json</a></li>
+						</ul>
+					</li>
+					<li class="header_menu_list_item"><a class="header_menu_list_item_link" href="#">Profiler</a></li>
+					<li class="header_menu_list_item">
+						<a class="header_menu_list_item_link dropdown" href="#">News</a>
+						<ul class="dropdown_list">
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Import global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events json</a></li>
+						</ul>
+					</li>
+					<li class="header_menu_list_item">
+						<a class="header_menu_list_item_link dropdown" href="#">Tools</a>
+						<ul class="dropdown_list">
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Import global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events json</a></li>
+						</ul>
+					</li>
+					<li class="header_menu_list_item">
+						<a class="header_menu_list_item_link dropdown" href="#">Global events</a>
+						<ul class="dropdown_list">
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Import global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events json</a></li>
+						</ul>
+					</li>
+					<li class="header_menu_list_item"><a class="header_menu_list_item_link" href="#">KPI</a></li>
+					<li class="header_menu_list_item"><a class="header_menu_list_item_link" href="#">Chat</a></li>
+					<li class="header_menu_list_item">
+						<a class="header_menu_list_item_link dropdown" href="#">Discount Offers</a>
+						<ul class="dropdown_list">
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Import global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events</a></li>
+							<li class="dropdown_list_item"><a href="#" class="dropdown_list_item_link">Global events json</a></li>
+						</ul>
+					</li>
+					</li>
+					<li class="header_menu_list_item"><a class="header_menu_list_item_link" href="#">Stormfall Ratings</a></li>
+				</ul>
+			</div>
+			<div class="header_auth">
+				<ul class="header_auth_list">
+					<li class="header_auth_list_item"><a class="header_auth_list_item_link signout" href="#">Sign out</a></li>
+					<li class="header_auth_list_item"><a class="header_auth_list_item_link name" href="#">dm_gri</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="wrap">
+			<div class="main-page clearfix" id="main_page">
+				<header class="header-main clearfix">
+					<div class="header_chat">
+						<ul class="header_chat_list">
+							<li class="header_chat_list_item web">Game Web Chat</li>
+							<li class="header_chat_list_item room">Room m-65</li>
+						</ul>
+					</div>
+					<div class="header_search">
+						<form class="search_form" action="#" method="post">
+							<ul class="search_form_list">
+								<li class="search_form_list_item">
+									<button type="button" class="clan_search-btn">Clan search</button>
+									<div class="clan_search-menu">
+										<div class="clan_search-title">Clan Name</div>
+										<label><input class="clan_search_input-name" name="clan-search-input-name" type="text" placeholder="Clan name"></label>
+										<div class="clan_search-title">Clan Lead</div>
+										<label><input class="clan_search_input x" name="clan-search-input-x" type="text" placeholder="X"></label>
+										<label><input class="clan_search_input y" name="clan-search-input-y" type="text" placeholder="Y"></label>
+									</div>
+								</li>
+								<li class="search_form_list_item">
+									<label><input class="search_form-search-input" name="search-input" type="text" placeholder="Search"></label>
+								</li>
+								<li class="search_form_list_item">
+									<label class="search_form_label applic" for="application">Application:</label>
+									<div class="select-icon">
+										<select class="search_form_select applic" id="application" name="application">
+											<option value="Rules of War (VK)">Rules of War (VK)</option>
+											<option value="Rules of War (VK)">Rules of War (VK)</option>
+											<option value="Rules of War (VK)">Rules of War (VK)</option>
+										</select>
+									</div>
+								</li>
+								<li class="search_form_list_item">
+									<label class="search_form_label type" for="room-type">Room Type:</label>
+									<div class="select-icon">
+										<select class="search_form_select type" id="room-type" name="room-type">
+											<option value="Public">Public</option>
+											<option value="Public">Public</option>
+											<option value="Public">Public</option>
+										</select>
+									</div>
+								</li>
+							</ul>
+						</form>
+					</div>
+				</header>
+				<div class="rooms resize">
+					<div class="rooms_global"><a class="rooms_global_link" href="#">Global Room (462)</a></div>
+					<div class="rooms-scroll">
+						<ul class="rooms_list resize">
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-33 (5)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link selected" href="#">Room m-65</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-36 (8)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-40 (6)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-44 (1)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-45 (1)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-46 (5)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-47 (4)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-48 (4)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-49 (1)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-50</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-53 (5)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-54 (1)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-55 (1)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-56 (7)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-59 (6)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-60 (2)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-61 (4)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-62 (2)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-63 (1)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-64 (10)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-34 (1)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-66 (1)</a></li>
+							<li class="rooms_list_item"><a class="rooms_list_item_link" href="#">Room m-67 (3)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="chat resize">
+					<div class="chat-general">
+						<div class="chat-scroll">
+							<ul class="chat_list resize">
+								<li class="chat_list_item">
+									<div class="msg_time">0:02:06</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">Helvetica Pitchfork</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:03:29</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">Echo Park chambray messenger bag fixie.</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:03:58</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">Carles Tumblr semiotics trust fund single-origin coffee post-ironic lo-fi iPhone. </span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:04:38</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">Cliche PBR&amp;B pork belly, gentrify pug bicycle rights ethical gastropub Tumblr mlkshk</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:06:28</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">ISOISO</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">  PBR.</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:07:19</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">Blog Intelligentsia disrupt,</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:08:03</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">ISOISO</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">  Pitchfork tilde single-origin coffee direct</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:08:29</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">trade Kickstarter irony locavore</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:09:19</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">ISOISO</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">  letterpress shabby chic narwhal. Freegan yr flexitarian brunch, actually photo booth tilde.</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:10:50</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">Yr mixtape meh,</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:11:30</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">ISOISO</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">  twee Austin scenester</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:12:06</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">OdGen</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">try-hard leggings blog skateboard lomo cold-pressed.</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:12:59</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">OdGen</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">Cliche vegan single-origin coffee,</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:14:13</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">OdGen</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">meh XOXO semiotics before they sold out</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:15:10</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">OdGen</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">gastropub freegan twee authentic.</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:16:01</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">PBR&amp;B farm-to-table </span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:17:25</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">ISOISO</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">  DIY, vegan meditation fashion</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:17:35</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">axe put a bird on it hella Helvetica small batch.</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:18:20</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">ISOISO</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">  PBR polaroid chia twee,</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:18:24</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">kitsch single-origin coffee banjo butcher typewriter whatever master cleanse</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:19:17</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">ISOISO</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">  post-ironic Shoreditch forage.</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:19:44</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">YOLO keffiyeh Echo Park paleo craft beer,</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:20:05</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">ISOISO</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">  Marfa letterpress health goth meggings hella Williamsburg crucifix Neutra Intelligentsia.</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:24:58</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">OdGen</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">Cornhole mlkshk church-key,</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:26:49</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">XOXO sustainable meditation lumbersexual disrupt.</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:26:49</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">ISOISO</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">  Fanny pack fingerstache cold-pressed,</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">0:46:26</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">Banksy</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">1:12:52</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">ISOISO</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">  dreamcatcher cronut McSweeney's</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">1:13:02</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">farm-to-table. Keffiyeh Vice chillwave keytar.</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">1:13:14</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">ISOISO</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">  Pop-up 8-bit Godard,</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">1:13:23</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">Austin vegan keffiyeh direct trade Thundercats.</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">10:18:40</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">ISOISO</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">  Irony Blue Bottle flexitarian post-ironic.</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">11:25:49</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">OdGen</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">  Messenger bag migas Pitchfork,</span>
+								</li>
+								<li class="chat_list_item">
+									<div class="msg_time">12:41:10</div>
+									<div class="msg_name">
+										<a class="msg_name_link" href="#">Ardoof</a>
+										<ul class="name_menu_list">
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link user">User</a></li>
+											<li class="name_menu_list_item"><a href="#" class="name_menu_list_item_link ban">Ban</a></li>
+										</ul>
+									</div>
+									<span class="msg_text">American Apparel slow-carb Schlitz 8-bit</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="chat_enter">
+						<label><input class="chat_enter_msg-your" name="msg-input-your" type="text" placeholder="Your message..."></label>
+						<label class="chat_enter_msg label"><input class="chat_enter_msg-to-all" name="msg-to-all" type="checkbox">To all</label>
+						<label><input class="chat_enter_msg-btn" name="msg-btn" type="submit" value="Send"></label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="wrap">
+				<p class="footer-caption">Plarium &copy; 2014</p>
+		</div>
+	</footer>
+	<script src="js/min/jquery.min.js"></script>
+	<script src="js/min/flexmenu.min.js"></script>
+	<script src="js/min/main.min.js"></script>
+</body>
+</html>
